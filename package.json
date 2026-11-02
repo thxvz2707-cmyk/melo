@@ -1,0 +1,14 @@
+{
+  "name": "de-th-para-melo",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Um livro interativo feito especialmente para a Melo.",
+  "main": "servidor.js",
+  "scripts": {
+    "start": "node servidor.js"
+  },
+  "dependencies": {
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2"
+  }
+}

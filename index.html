@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#10090d">
+    <meta name="description" content="Um livro interativo feito especialmente para a Melo.">
+    <title>De TH para Melo</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/script.js" defer></script>
+  </head>
+  <body>
+    <div class="ambient ambient-one" aria-hidden="true"></div>
+    <div class="ambient ambient-two" aria-hidden="true"></div>
+    <main class="scene">
+      <div class="book" id="book">
+        <section class="cover" id="cover" aria-labelledby="cover-title">
+          <div class="cover-frame" aria-hidden="true"></div>
+          <div class="cover-stars" aria-hidden="true">
+            <span>✦</span><span>·</span><span>✧</span><span>·</span><span>✦</span>
+          </div>
+          <div class="cover-content">
+            <span class="cover-heart" aria-hidden="true">♡</span>
+            <h1 id="cover-title">De TH <span>para</span> Melo</h1>
+            <p class="cover-subtitle">Algumas coisas que eu queria que você soubesse.</p>
+            <button class="primary-button" id="open-book" type="button">
+              Abrir meu livro <span aria-hidden="true">↗</span>
+            </button>
+          </div>
+        </section>
+
+        <section class="reader" id="reader" aria-live="polite" hidden>
+          <header class="reader-header">
+            <span class="reader-mark">TH <span>♡</span> MELO</span>
+            <button class="text-button" id="close-book" type="button">Fechar livro</button>
+          </header>
+          <div class="progress-track" role="progressbar" aria-label="Progresso do livro" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0">
+            <span class="progress-fill" id="progress-fill"></span>
+          </div>
+          <div class="page-area" id="page-area"></div>
+          <footer class="reader-footer">
+            <button class="nav-button" id="previous-page" type="button">
+              <span aria-hidden="true">←</span> Voltar
+            </button>
+            <span class="page-count" id="page-count"></span>
+            <button class="nav-button nav-next" id="next-page" type="button">
+              Avançar <span aria-hidden="true">→</span>
+            </button>
+          </footer>
+        </section>
+      </div>
+    </main>
+  </body>
+</html>
